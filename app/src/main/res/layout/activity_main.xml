@@ -1,48 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="@dimen/padding_normal"
     android:background="@color/orange"
-    tools:context=".view.MainActivity">
-
-    <TextView
-        android:id="@+id/textview_logo"
-        style="@style/logo"
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/logo_height"
-        android:text="RJT"
-        android:textColor="@color/white"
-        android:layout_gravity="center"
-        />
-
-    <LinearLayout
-        android:id="@+id/inner_constraint_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:layout_marginStart="115dp"
-        android:layout_marginBottom="@dimen/margin_large"
-        >
-
-        <TextView
-            android:id="@+id/textview_get_started"
-            android:text="@string/get_started"
-            style="@style/title_one_white"
-            android:textColor="@color/white"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:ignore="MissingConstraints" />
-        <ImageView
-            android:id="@+id/imageview_start_arrow"
-            android:src="@drawable/ic_arrow_start"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toEndOf="@+id/textview_get_started"
-            tools:ignore="MissingConstraints" />
-    </LinearLayout>
-
+    android:orientation="vertical"
+    tools:context=".view.MainActivity"
+    android:id="@+id/frameLayout_main"
+    >
 
 </FrameLayout>
+
+
+
